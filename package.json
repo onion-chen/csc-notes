@@ -1,0 +1,21 @@
+{
+  "name": "csc-notes",
+  "version": "0.0.1",
+  "description": "用代码丈量世界，用文字记录成长",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "docs:update-package": "npx vp-update"
+  },
+  "devDependencies": {
+    "@vuepress/bundler-vite": "^2.0.0-rc.7",
+    "@vuepress/plugin-search": "^2.0.0-rc.91",
+    "@vuepress/theme-default": "^2.0.0-rc.11",
+    "sass-embedded": "^1.86.3",
+    "vue": "^3.4.0",
+    "vuepress": "^2.0.0-rc.7"
+  }
+}
