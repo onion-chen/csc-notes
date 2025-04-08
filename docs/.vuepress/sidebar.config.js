@@ -22,6 +22,9 @@ export default {
         {
           text: "作用域和闭包",
           link: "/notes/javascript/作用域和闭包.md",
+        },{
+          text: "变量和函数提升",
+          link: "/notes/javascript/变量和函数提升.md",
         },
       ],
     },

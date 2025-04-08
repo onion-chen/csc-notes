@@ -134,13 +134,7 @@ const features = [
 ];
 
 const updates = [
-  { text: "JavaScript", link: "/csc-notes/notes/javascript/" },
-  {
-    text: "TypeScript",
-    link: "/csc-notes/notes/typescript/",
-  },
-  { text: "Node.js性能优化实战", link: "/csc-notes/notes/nodejs/" },
-  { text: "CSS", link: "/csc-notes/notes/css/" },
+  { text: "变量和函数提升", link: "/csc-notes/notes/javascript/变量和函数提升" },
 ];
 
 const techStack = [
@@ -151,7 +145,7 @@ const techStack = [
 ];
 
 const stats = [
-  { value: 3, label: "技术文章" },
+  { value: 4, label: "技术文章" },
   { value: 1, label: "开源项目" },
   { value: 4, label: "技术专栏" },
 ];
@@ -278,8 +272,8 @@ const socialLinks = [
 }
 
 .feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 强制三列布局 */
+  display: flex;
+  justify-content: space-between;
   gap: 1.5rem;
   max-width: 1200px; /* 增加最大宽度 */
   margin: 0 auto;
@@ -287,7 +281,7 @@ const socialLinks = [
 
 .feature-card {
   padding: 1.5rem;
-  min-height: 280px; /* 统一卡片高度 */
+  min-height: 225px; /* 统一卡片高度 */
   display: flex;
   flex-direction: column;
   justify-content: space-between;

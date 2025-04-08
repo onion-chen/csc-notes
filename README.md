@@ -8,9 +8,6 @@
 ## 🚀 快速访问
 - ​**​在线文档​**​：<https://csc666888.github.io/csc-notes/>
 
-## 🎯 近期更新
-- [TypeScript](https://csc666888.github.io/csc-notes/notes/typescript/) - 2025.04.05
-
 ## 📦 核心模块
 | 模块 | 描述 | 文档链接 |
 |------|------|---------|
