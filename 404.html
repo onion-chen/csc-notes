@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zn-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/csc-notes/favicon.ico"><title>CSC-NOTES</title><meta name="description" content="用代码丈量世界，用文字记录成长">
+    <link rel="preload" href="/csc-notes/assets/style-DJw-wwb6.css" as="style"><link rel="stylesheet" href="/csc-notes/assets/style-DJw-wwb6.css">
+    <link rel="modulepreload" href="/csc-notes/assets/app-DIgche4W.js"><link rel="modulepreload" href="/csc-notes/assets/404.html-DUWnGXzW.js">
+    <link rel="prefetch" href="/csc-notes/assets/index.html-B_kT9LpF.js" as="script"><link rel="prefetch" href="/csc-notes/assets/index.html-BuhVQ28K.js" as="script"><link rel="prefetch" href="/csc-notes/assets/index.html-BSSTm6iv.js" as="script"><link rel="prefetch" href="/csc-notes/assets/index.html-B7A8D2FP.js" as="script"><link rel="prefetch" href="/csc-notes/assets/this指向问题.html-DSi99YP2.js" as="script"><link rel="prefetch" href="/csc-notes/assets/作用域和闭包.html-DUiATG1N.js" as="script"><link rel="prefetch" href="/csc-notes/assets/index.html-Bopv6foS.js" as="script"><link rel="prefetch" href="/csc-notes/assets/index.html-CNwLLG5v.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-ec9917b8><main class="page" data-v-ec9917b8><div vp-content data-v-ec9917b8><h1 data-v-ec9917b8>404</h1><blockquote data-v-ec9917b8>There&#39;s nothing here.</blockquote><a class="route-link" href="/csc-notes/" data-v-ec9917b8>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/csc-notes/assets/app-DIgche4W.js" defer></script>
+  </body>
+</html>
