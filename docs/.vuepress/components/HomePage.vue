@@ -135,7 +135,7 @@ const features = [
 ];
 
 const updates = [
-  { text: "变量和函数提升", link: "/csc-notes/notes/javascript/变量和函数提升" },
+  { text: "CommonJS规范", link: "/csc-notes/notes/nodejs/CommonJS规范" },
 ];
 
 const techStack = [
@@ -146,9 +146,9 @@ const techStack = [
 ];
 
 const stats = [
-  { value: 4, label: "技术文章" },
+  { value: 5, label: "技术文章" },
   { value: 1, label: "开源项目" },
-  { value: 4, label: "技术专栏" },
+  { value: 2, label: "技术专栏" },
 ];
 
 const socialLinks = [
@@ -276,18 +276,14 @@ const socialLinks = [
 
 .feature-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 1.5rem;
-  max-width: 1200px; /* 增加最大宽度 */
-  margin: 0 auto;
+  justify-content: space-around;
+  width: 800px;
 }
 
 .feature-card {
   padding: 1.5rem;
   min-height: 225px; /* 统一卡片高度 */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  width: 200px;
 }
 
 .feature-card:hover {

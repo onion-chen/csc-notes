@@ -29,6 +29,18 @@ export default {
       ],
     },
   ],
+  "/notes/nodejs/": [
+    {
+      text: "NodeJS",
+      link: "/notes/nodejs/README.md",
+      children: [
+        {
+          text: "CommonJS规范",
+          link: "/notes/nodejs/CommonJS规范.md",
+        },
+      ],
+    },
+  ],
   "/notes/css/": [
     {
       text: "CSS",
@@ -39,12 +51,6 @@ export default {
     {
       text: "Typescript",
       children: ["/notes/typescript/README.md"],
-    },
-  ],
-  "/notes/nodejs/": [
-    {
-      text: "NodeJS",
-      children: ["/notes/nodejs/README.md", "/notes/nodejs/nodejs.md"],
     },
   ],
 };

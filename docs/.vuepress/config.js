@@ -34,16 +34,43 @@ export default defineUserConfig({
 
     navbar: [
       { text: "首页", link: "/" },
-      // { text: 'Vue', link: '/notes/vue/' },
-      { text: "JavaScript", link: "/notes/javascript/" },
-      { text: "Typescript", link: "/notes/typescript/" },
-      { text: "CSS", link: "/notes/css/" },
-      { text: "NodeJS", link: "/notes/nodejs/" },
+      { 
+        text: '我的笔记', 
+        navbar: true,
+        children: [
+          { text: "JavaScript", link: "/notes/javascript/" },
+          { text: "Typescript", link: "/notes/typescript/" },
+          { text: "NodeJS", link: "/notes/nodejs/" },
+          { text: "CSS", link: "/notes/css/" },
+          { text: "Vue", link: "/notes/vue/" },
+          { text: "React", link: "/notes/react/" },
+        ]
+      },
+      { 
+        text: '工程化', 
+        navbar: true,
+        children: [
+          { 
+            text: "前端工程化", 
+            children: [
+              { text: "Vue", link: "/engineering/web/vue/" },
+              { text: "React", link: "/engineering/web/react/" },
+            ],
+            navbar: true,
+           },
+          { 
+            text: "后端工程化",
+            navbar: true,
+            children: [
+              { text: "NodeJS", link: "/engineering/server/node/" },
+            ],
+          }
+        ]
+      },
       {
         text: "Github",
         link: "https://github.com/csc666888/csc-notes",
-        target: "_blank",
-        icon: "/github.png",
+        target: "_blank"
       },
     ],
     sidebar,
