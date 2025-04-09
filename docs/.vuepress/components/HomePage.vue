@@ -99,6 +99,7 @@
                 <img
                   :src="link.icon"
                   alt="github"
+                  :title="link.title"
                   style="width: 32px; height: 32px"
                 />
               </a>
@@ -153,11 +154,13 @@ const stats = [
 const socialLinks = [
   {
     icon: "/csc-notes/github.png",
-    url: "https://github.com/csc666888/csc-notes",
+    url: "https://github.com/csc666888",
+    title: '我的GitHub主页',
   },
   {
     icon: "/csc-notes/csdn.png",
     url: "https://blog.csdn.net/linzhangmeidi?spm=1000.2115.3001.10640",
+    title: '我的CSDN主页',
   },
 ];
 </script>

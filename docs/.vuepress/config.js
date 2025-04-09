@@ -6,7 +6,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 import sidebar from "./sidebar.config.js";
 
 export default defineUserConfig({
-  lang: "zn-CN",
+  lang: "zh-CN",
   base: "/csc-notes/",
   dest: "docs/.vuepress/dist",
 
