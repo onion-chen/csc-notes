@@ -159,7 +159,7 @@ const socialLinks = [
   },
   {
     icon: "/csc-notes/csdn.png",
-    url: "https://blog.csdn.net/linzhangmeidi?spm=1000.2115.3001.10640",
+    url: "https://blog.csdn.net/linzhangmeidi",
     title: '我的CSDN主页',
   },
 ];
