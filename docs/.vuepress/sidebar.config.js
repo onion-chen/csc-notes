@@ -1,50 +1,46 @@
 export default {
   "/": "",
-  // '/notes/vue/': [
-  //   {
-  //     text: 'Vue',
-  //     children: [
-  //       '/notes/vue/README.md',
-  //       '/notes/vue/vue2.md',
-  //       '/notes/vue/vue3.md',
-  //     ],
-  //   },
-  // ],
-  "/notes/javascript/": [
+  "/notes/web/javascript/": [
     {
       text: "JavaScript",
-      link: "/notes/javascript/README.md",
+      link: "/notes/web/javascript/README.md",
       children: [
         {
           text: "this指向问题",
-          link: "/notes/javascript/this指向问题.md",
+          link: "/notes/web/javascript/this指向问题.md",
         },
         {
           text: "作用域和闭包",
-          link: "/notes/javascript/作用域和闭包.md",
+          link: "/notes/web/javascript/作用域和闭包.md",
         },{
           text: "变量和函数提升",
-          link: "/notes/javascript/变量和函数提升.md",
+          link: "/notes/web/javascript/变量和函数提升.md",
         },
       ],
     },
   ],
-  "/notes/nodejs/": [
+  "/notes/server/nodejs/": [
     {
       text: "NodeJS",
-      link: "/notes/nodejs/README.md",
+      link: "/notes/server/nodejs/README.md",
       children: [
         {
           text: "CommonJS规范",
-          link: "/notes/nodejs/CommonJS规范.md",
+          link: "/notes/server/nodejs/CommonJS规范.md",
         },
       ],
     },
   ],
-  "/notes/css/": [
+  "/notes/web/css/": [
     {
       text: "CSS",
-      children: ["/notes/css/README.md", "/notes/css/css3.md"],
+      link: "/notes/web/css/README.md",
+      children: [
+        {
+          text: "css和文档",
+          link: "/notes/web/css/css和文档.md",
+        },
+      ],
     },
   ],
   "/notes/typescript/": [

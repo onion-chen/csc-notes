@@ -2,6 +2,7 @@ import { defaultTheme } from "@vuepress/theme-default";
 import { defineUserConfig } from "vuepress/cli";
 import { viteBundler } from "@vuepress/bundler-vite";
 import { searchPlugin } from "@vuepress/plugin-search";
+import {getDirname, path} from 'vuepress/utils';
 
 import sidebar from "./sidebar.config.js";
 
@@ -9,7 +10,9 @@ export default defineUserConfig({
   lang: "zh-CN",
   base: "/csc-notes/",
   dest: "docs/.vuepress/dist",
-
+  alias: {
+    '@': path.resolve(getDirname(import.meta.url), './public'),
+  },
   title: "CSC-NOTES",
   description: "用代码丈量世界，用文字记录成长",
 
@@ -38,15 +41,47 @@ export default defineUserConfig({
         text: '我的笔记', 
         navbar: true,
         children: [
-          { text: "JavaScript", link: "/notes/javascript/" },
-          { text: "Typescript", link: "/notes/typescript/" },
-          { text: "NodeJS", link: "/notes/nodejs/" },
-          { text: "CSS", link: "/notes/css/" },
-          { text: "Vue", link: "/notes/vue/" },
-          { text: "React", link: "/notes/react/" },
+          { 
+            text: "前端笔记", 
+            link: "/notes/web/",
+            navbar: true,
+            children: [
+              { text: "Vue", link: "/notes/web/vue/" },
+              { text: "React", link: "/notes/web/react/" },
+              { text: "CSS", link: "/notes/web/css/" },
+              { text: "JavaScript", link: "/notes/web/javascript/" },
+              { text: "TypeScript", link: "/notes/web/typeScript/" },
+            ]
+          },
+          {
+            text: "服务端笔记", 
+            link: "/notes/server/",
+            navbar: true,
+            children: [
+              { text: "NodeJS", link: "/notes/server/nodejs/" },
+            ]
+          },
+          {
+            text: "计算机网络", 
+            link: "/notes/net/",
+            navbar: true,
+            children: [
+              { text: "计算机网络基础", link: "/notes/net/base/" },
+              { text: "计算机网络进阶", link: "/notes/net/advance/" },
+            ]
+          },
+          {
+            text: "操作系统", 
+            link: "/notes/os/",
+            navbar: true,
+            children: [
+              { text: "操作系统基础", link: "/notes/os/base/" },
+              { text: "操作系统进阶", link: "/notes/os/advance/" },
+            ]
+          }
         ]
       },
-      { 
+      {
         text: '工程化', 
         navbar: true,
         children: [
@@ -65,6 +100,22 @@ export default defineUserConfig({
               { text: "NodeJS", link: "/engineering/server/node/" },
             ],
           }
+        ]
+      },
+      {
+        text: '数据结构与算法', 
+        navbar: true,
+        children: [
+          { text: "数据结构", link: "/algorithm/data-structure/" },
+          { text: "算法", link: "/algorithm/algorithm/" },
+        ]
+      },
+      {
+        text: '面试', 
+        navbar: true,
+        children: [
+          { text: "前端面试", link: "/interview/web/" },
+          { text: "后端面试", link: "/interview/server/" },
         ]
       },
       {

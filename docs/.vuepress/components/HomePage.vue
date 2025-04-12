@@ -12,7 +12,7 @@
           <p class="tagline">用代码丈量世界，用文字记录成长</p>
           <button
             class="action-button"
-            @click="$router.push('/notes/javascript/')"
+            @click="$router.push('/notes/web/javascript/')"
           >
             开始阅读 →
           </button>
@@ -135,7 +135,8 @@ const features = [
 ];
 
 const updates = [
-  { text: "CommonJS规范", link: "/csc-notes/notes/nodejs/CommonJS规范" },
+  { text: "CommonJS规范", link: "/csc-notes/notes/server/nodejs/CommonJS规范" },
+  { text: "css和文档", link: "/csc-notes/notes/web/css/css和文档" },
 ];
 
 const techStack = [
@@ -146,7 +147,7 @@ const techStack = [
 ];
 
 const stats = [
-  { value: 5, label: "技术文章" },
+  { value: 6, label: "技术文章" },
   { value: 1, label: "开源项目" },
   { value: 2, label: "技术专栏" },
 ];
