@@ -6,15 +6,25 @@ export default {
       link: "/notes/web/javascript/README.md",
       children: [
         {
-          text: "this指向问题",
-          link: "/notes/web/javascript/this指向问题.md",
+          text: "JavaScript基础",
+          link: "/notes/web/javascript/base/README.md",
         },
         {
-          text: "作用域和闭包",
-          link: "/notes/web/javascript/作用域和闭包.md",
-        },{
-          text: "变量和函数提升",
-          link: "/notes/web/javascript/变量和函数提升.md",
+          text: "JavaScript高级",
+          link: "/notes/web/javascript/advance/README.md",
+          children: [
+            {
+              text: "this指向问题",
+              link: "/notes/web/javascript/advance/this指向问题.md",
+            },
+            {
+              text: "作用域和闭包",
+              link: "/notes/web/javascript/advance/作用域和闭包.md",
+            },{
+              text: "变量和函数提升",
+              link: "/notes/web/javascript/advance/变量和函数提升.md",
+            },
+          ],
         },
       ],
     },
@@ -27,6 +37,9 @@ export default {
         {
           text: "CommonJS规范",
           link: "/notes/server/nodejs/CommonJS规范.md",
+        },{
+          text: "Node的模块实现",
+          link: "/notes/server/nodejs/Node的模块实现.md",
         },
       ],
     },
