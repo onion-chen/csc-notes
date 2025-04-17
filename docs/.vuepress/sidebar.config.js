@@ -56,10 +56,16 @@ export default {
       ],
     },
   ],
-  "/notes/typescript/": [
+  "/notes/web/typescript/": [
     {
       text: "Typescript",
-      children: ["/notes/typescript/README.md"],
+      link: "/notes/web/typescript/README.md",
+      children: [
+        {
+          text: "为什么要typescript",
+          link: "/notes/web/typescript/为什么要typescript.md",
+        },
+      ],
     },
   ],
 };

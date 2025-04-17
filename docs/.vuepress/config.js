@@ -50,7 +50,7 @@ export default defineUserConfig({
               { text: "React", link: "/notes/web/react/" },
               { text: "CSS", link: "/notes/web/css/" },
               { text: "JavaScript", link: "/notes/web/javascript/" },
-              { text: "TypeScript", link: "/notes/web/typeScript/" },
+              { text: "TypeScript", link: "/notes/web/typescript/" },
             ]
           },
           {

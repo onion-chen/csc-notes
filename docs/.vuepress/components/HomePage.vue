@@ -138,6 +138,7 @@ const updates = [
   { text: "CommonJS规范", link: "/csc-notes/notes/server/nodejs/CommonJS规范" },
   { text: "css和文档", link: "/csc-notes/notes/web/css/css和文档" },
   { text: "Node的模块实现", link: "/csc-notes/notes/server/nodejs/Node的模块实现" },
+  { text: "为什么要typescript", link: "/csc-notes/notes/web/typescript/为什么要typescript" },
 ];
 
 const techStack = [
