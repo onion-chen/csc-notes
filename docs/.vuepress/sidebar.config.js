@@ -8,6 +8,18 @@ export default {
         {
           text: "JavaScript基础",
           link: "/notes/web/javascript/base/README.md",
+          children: [
+            {
+              text: "1、语法基础",
+              link: "/notes/web/javascript/base/grammar/README.md",
+              children: [
+                {
+                  text: "1.1语法",
+                  link: "/notes/web/javascript/base/grammar/语法.md",
+                }
+              ],
+            }
+          ],
         },
         {
           text: "JavaScript高级",

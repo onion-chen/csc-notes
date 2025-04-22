@@ -26,7 +26,7 @@ export default defineUserConfig({
         maxSuggestions: 10, // 最大建议数
         hotKeys: ["s", "/"], // 快捷键（按 s 或 / 聚焦搜索框）
         locales: {
-          "/": { placeholder: "搜索文档" }, // 中文提示
+          "/": { placeholder: "请输入搜索内容" }, // 搜索输入提示
         },
       })
     ]
