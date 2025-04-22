@@ -1,3 +1,9 @@
+---
+title: CommonJS的模块规范
+meta:
+  - name: description
+    content: 本节将介绍CommonJS的模块规范
+---
 # CommonJS的模块规范
 
 ## 为什么需要CommonJS

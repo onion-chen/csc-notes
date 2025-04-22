@@ -62,6 +62,14 @@ export default defineUserConfig({
             ]
           },
           {
+            text: "数据库笔记", 
+            link: "/notes/db/",
+            navbar: true,
+            children: [
+              { text: "Postgresql", link: "/notes/server/db/" },
+            ]
+          },
+          {
             text: "计算机网络", 
             link: "/notes/net/",
             navbar: true,
