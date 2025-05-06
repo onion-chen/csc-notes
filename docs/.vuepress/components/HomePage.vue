@@ -137,8 +137,8 @@ const features = [
 const updates = [
   { text: "CommonJS规范", link: "/csc-notes/notes/server/nodejs/CommonJS规范" },
   { text: "css和文档", link: "/csc-notes/notes/web/css/css和文档" },
-  { text: "Node的模块实现", link: "/csc-notes/notes/server/nodejs/Node的模块实现" },
-  { text: "为什么要typescript", link: "/csc-notes/notes/web/typescript/为什么要typescript" },
+  { text: "JavaScript语法", link: "/csc-notes/notes/web/javascript/base/grammar/语法" },
+  { text: "JavaScript变量", link: "/csc-notes/notes/web/javascript/base/grammar/变量" },
 ];
 
 const techStack = [
