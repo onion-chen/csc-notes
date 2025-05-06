@@ -16,6 +16,10 @@ export default {
                 {
                   text: "1.1语法",
                   link: "/notes/web/javascript/base/grammar/语法.md",
+                },
+                {
+                  text: "1.2变量",
+                  link: "/notes/web/javascript/base/grammar/变量.md",
                 }
               ],
             }
