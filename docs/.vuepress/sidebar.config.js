@@ -20,6 +20,10 @@ export default {
                 {
                   text: "1.2变量",
                   link: "/notes/web/javascript/base/grammar/变量.md",
+                },
+                {
+                  text: "1.3数据类型",
+                  link: "/notes/web/javascript/base/grammar/数据类型.md",
                 }
               ],
             }

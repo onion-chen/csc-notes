@@ -149,7 +149,7 @@ const techStack = [
 ];
 
 const stats = [
-  { value: 6, label: "技术文章" },
+  { value: '10+', label: "技术文章" },
   { value: 1, label: "开源项目" },
   { value: 2, label: "技术专栏" },
 ];
