@@ -2,5 +2,3 @@ node_modules
 docs/.vuepress/.cache
 docs/.vuepress/dist
 docs/.vuepress/.temp
-docs/README copy.md
-package-lock.json
