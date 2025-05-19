@@ -10,7 +10,7 @@
       const script = document.createElement("script");
       script.src = "https://utteranc.es/client.js";
       script.async = true;
-      script.setAttribute("repo", "csc666888/csc-notes"); // 替换为你的 GitHub 仓库
+      script.setAttribute("repo", "csc666888/csc-notes"); // 替换为 GitHub 仓库
       script.setAttribute("issue-term", "pathname"); // 根据页面路径生成评论
       script.setAttribute("theme", "github-light"); // 主题，可选值：github-light, github-dark 等
       script.setAttribute("crossorigin", "anonymous");
