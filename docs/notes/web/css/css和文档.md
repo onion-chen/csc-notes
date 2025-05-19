@@ -1,40 +1,197 @@
 ---
-title: CSS 特性简介
+title: CSS3 完整特性指南：从基础到高级特性详解
 meta:
   - name: description
-    content: 本节将介绍CSS特性简介
+    content: 深入解析CSS3核心特性，包括模块化体系、选择器、布局模型等。从基础概念到实践应用，助您掌握现代CSS开发技巧。
+  - name: keywords
+    content: CSS3,模块化,选择器,盒模型,Flexbox,Grid布局,动画,过渡效果,媒体查询,响应式设计
+  - name: author
+    content: CSC Notes
 ---
 # 🎨 CSS 3 特性简介
 
+> 本文将全面介绍CSS3的核心特性，帮助您深入理解现代CSS开发技术，掌握网页样式设计的精髓。
+
 ## 1. ⚙️ 模块化体系
-CSS采用模块化架构，主要包含：
+CSS3采用模块化架构，将不同功能特性划分为独立模块，便于维护和扩展。主要包含以下核心模块：
+
 - **📦 Box Model**（盒模型）
+  - 控制元素的尺寸、内外边距和边框
+  - 支持`box-sizing`属性调整盒模型计算方式
+
 - **🎨 Color Module**（颜色模块）
+  - 支持RGB、RGBA、HSL、HSLA等多种颜色表示方式
+  - 提供`opacity`属性控制透明度
+
 - **🎯 Selectors**（选择器）
+  - 强大的元素选择机制
+  - 支持属性选择器、伪类和伪元素
+
 - **📐 Flexbox/Grid**（弹性/网格布局）
+  - Flexbox：一维布局系统，适合组件级布局
+  - Grid：二维布局系统，适合页面级布局
+
 - **🎬 Transitions/Animations**（过渡/动画）
+  - 过渡：平滑属性变化效果
+  - 动画：创建复杂的动画序列
+
 - **📱 Media Queries**（媒体查询）
+  - 响应式设计的基础
+  - 根据设备特性调整样式
 
 ## 2. 🧱 层叠与继承
+
+### 2.1 层叠机制
+层叠是CSS的核心特性之一，决定了样式的优先级。当多个样式规则应用到同一个元素时，层叠机制决定最终采用哪个样式。
+
+优先级从高到低：
+1. `!important`标记的样式
+2. 内联样式（style属性）
+3. ID选择器（#id）
+4. 类选择器（.class）
+5. 标签选择器（div, p等）
+6. 通用选择器（*）
+
 ```css
 /* 层叠示例 */
 h1 {
   color: red !important; /* 🔝最高优先级 */
-  color: blue; 
+  color: blue;  /* 会被上面的规则覆盖 */
 }
 
-/* 继承示例 */
-body { font-family: Arial; }
-p { /* 👪自动继承body的字体设置 */ }
+.title {
+  color: green; /* 类选择器优先级低于!important */
+}
 ```
 
-## 3. 🔍 选择器类型示例
+### 2.2 继承机制
+继承允许子元素自动获取父元素的某些样式属性，提高样式编写效率。
 
-- 🔍 基本选择器	#header, .menu
-- 📌 属性选择器	[data-type="primary"]
-- 🖱️ 伪类选择器	:hover, :nth-child
-- ✨ 伪元素选择器	::before, ::after
-- ➕ 组合选择器	div > p, ul + p
+常见的可继承属性：
+- 文字相关：`font-family`, `font-size`, `color`
+- 行高相关：`line-height`
+- 文本相关：`text-align`, `text-indent`
+
+```css
+/* 继承示例 */
+body {
+  font-family: Arial;
+  color: #333;
+  line-height: 1.6;
+}
+
+p {
+  /* 👪自动继承body的字体、颜色和行高设置 */
+  font-size: 16px; /* 可以覆盖或补充特定属性 */
+}
+
+.no-inherit {
+  /* 使用initial可以取消继承 */
+  color: initial;
+}
+```
+
+## 3. 🔍 选择器类型详解
+
+选择器是CSS中最基础也是最强大的功能之一，掌握选择器可以精确控制页面中的任何元素。
+
+### 3.1 基本选择器
+```css
+/* 🔍 常用基本选择器示例 */
+#header { /* ID选择器 */
+  background: #f5f5f5;
+}
+
+.menu { /* 类选择器 */
+  display: flex;
+}
+
+div { /* 标签选择器 */
+  margin: 10px;
+}
+
+* { /* 通用选择器 */
+  box-sizing: border-box;
+}
+```
+
+### 3.2 属性选择器
+```css
+/* 📌 属性选择器的多种匹配方式 */
+[data-type="primary"] { /* 精确匹配 */
+  background: #007bff;
+}
+
+[class^="icon-"] { /* 开头匹配 */
+  background-size: contain;
+}
+
+[href$=".pdf"] { /* 结尾匹配 */
+  color: red;
+}
+
+[title*="user"] { /* 包含匹配 */
+  cursor: pointer;
+}
+```
+
+### 3.3 伪类选择器
+```css
+/* 🖱️ 常用伪类选择器 */
+.button:hover { /* 鼠标悬停 */
+  background: #eee;
+}
+
+.list li:nth-child(odd) { /* 奇数项 */
+  background: #f9f9f9;
+}
+
+.input:focus { /* 获得焦点 */
+  border-color: #66afe9;
+}
+
+.link:visited { /* 已访问链接 */
+  color: purple;
+}
+```
+
+### 3.4 伪元素选择器
+```css
+/* ✨ 伪元素使用示例 */
+.quote::before {
+  content: "\201C"; /* 左引号 */
+  font-size: 2em;
+}
+
+.tooltip::after {
+  content: attr(data-tip);
+  display: none;
+}
+
+.tooltip:hover::after {
+  display: block;
+}
+```
+
+### 3.5 组合选择器
+```css
+/* ➕ 组合选择器的不同关系 */
+div > p { /* 直接子元素 */
+  margin: 10px 0;
+}
+
+ul + p { /* 相邻兄弟 */
+  margin-top: 20px;
+}
+
+h2 ~ p { /* 后续所有兄弟 */
+  color: #666;
+}
+
+.sidebar .widget { /* 后代选择器 */
+  margin-bottom: 15px;
+}
+```
 
 ## 4. Web样式简介
 css的目标是提供一个简单的声明式样式语言，而且具有一定的灵活性，能为文档编写人员和用户提供等同的样式化功能。层叠样式表中的“层叠”是指样式可以结合使用，而且具有优先级，文档编写人员和用户都有话语权，不过最终的决策权在用户手中。

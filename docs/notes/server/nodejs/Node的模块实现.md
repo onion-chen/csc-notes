@@ -2,7 +2,9 @@
 title: Node模块实现
 meta:
   - name: description
-    content: 本节将介绍Node模块实现
+    content: 深入理解Node.js模块实现原理，包括路径分析、文件定位、编译执行以及核心模块、文件模块、自定义模块的加载机制和缓存优化。
+  - name: keywords
+    content: Node.js, 模块实现, require, 核心模块, 文件模块, 自定义模块, 模块加载, 缓存, 路径分析, 文件定位, 编译执行
 ---
 ## 1. 🗃️ Node模块实现
 在Node中引入模块需要三个步骤

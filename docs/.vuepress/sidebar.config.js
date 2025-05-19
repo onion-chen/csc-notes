@@ -24,6 +24,10 @@ export default {
                 {
                   text: "1.3数据类型",
                   link: "/notes/web/javascript/base/grammar/数据类型.md",
+                },
+                {
+                  text: "1.4操作符",
+                  link: "/notes/web/javascript/base/grammar/操作符.md",
                 }
               ],
             }
