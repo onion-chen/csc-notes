@@ -1,0 +1,31 @@
+<mxfile host="65bd71144e">
+    <diagram id="N7rjAWas5JQ6JQxuBivU" name="第 1 页">
+        <mxGraphModel dx="1625" dy="752" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="78" width="41" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="121" y="78" width="41" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="162" y="78" width="41" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="203" y="78" width="41" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="244" y="78" width="41" height="41" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="(2&lt;sup&gt;4 &lt;/sup&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;x&lt;/span&gt;&lt;sup&gt;&amp;nbsp;&lt;/sup&gt;1) +&amp;nbsp;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(2&lt;/span&gt;&lt;sup&gt;3&amp;nbsp;&lt;/sup&gt;x&lt;sup&gt;&amp;nbsp;&lt;/sup&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;0) +&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(2&lt;/span&gt;&lt;sup&gt;2&amp;nbsp;&lt;/sup&gt;x&lt;sup&gt;&amp;nbsp;&lt;/sup&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;0) +&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(2&lt;/span&gt;&lt;sup&gt;1&amp;nbsp;&lt;/sup&gt;x&lt;sup&gt;&amp;nbsp;&lt;/sup&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;1) +&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;(2&lt;/span&gt;&lt;sup&gt;0&amp;nbsp;&lt;/sup&gt;x&lt;sup&gt;&amp;nbsp;&lt;/sup&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;0)&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="34.25" y="138" width="296.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="16 + 0 + 0 + 0 + 2 + 0 = 18" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="34.25" y="175" width="296.5" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
