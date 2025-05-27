@@ -44,7 +44,7 @@ export default {
             {
               text: "作用域和闭包",
               link: "/notes/web/javascript/advance/作用域和闭包.md",
-            },{
+            }, {
               text: "变量和函数提升",
               link: "/notes/web/javascript/advance/变量和函数提升.md",
             },
@@ -61,7 +61,7 @@ export default {
         {
           text: "CommonJS规范",
           link: "/notes/server/nodejs/CommonJS规范.md",
-        },{
+        }, {
           text: "Node的模块实现",
           link: "/notes/server/nodejs/Node的模块实现.md",
         },
@@ -91,5 +91,26 @@ export default {
         },
       ],
     },
+  ],
+  "/notes/underlying/": [
+    {
+      text: "C/C++",
+      link: "/notes/underlying/README.md",
+      children: [
+        {
+          text: "C语言",
+          link: "/notes/underlying/C语言/README.md",
+          children: [
+            {
+              text: "1、初识C语言",
+              link: "/notes/underlying/C语言/初识C语言.md",
+            }
+          ],
+        }, {
+          text: "C++",
+          link: "/notes/underlying/C++/README.md"
+        },
+      ],
+    }
   ],
 };

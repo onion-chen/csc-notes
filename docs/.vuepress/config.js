@@ -62,6 +62,14 @@ export default defineUserConfig({
             ]
           },
           {
+            text: "C/C++", 
+            link: "/notes/underlying/",
+            navbar: true,
+            children: [
+              { text: "C语言", link: "/notes/underlying/C语言/" },
+            ]
+          },
+          {
             text: "数据库笔记", 
             link: "/notes/db/",
             navbar: true,
