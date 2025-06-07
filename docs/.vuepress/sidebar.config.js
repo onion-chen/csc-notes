@@ -104,6 +104,10 @@ export default {
             {
               text: "1、初识C语言",
               link: "/notes/underlying/C语言/初识C语言.md",
+            },
+            {
+              text: "2、C语言概述",
+              link: "/notes/underlying/C语言/C语言概述.md",
             }
           ],
         }, {
