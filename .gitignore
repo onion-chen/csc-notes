@@ -2,4 +2,3 @@ node_modules
 docs/.vuepress/.cache
 docs/.vuepress/dist
 docs/.vuepress/.temp
-package-lock.json
