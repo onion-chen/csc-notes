@@ -5,7 +5,7 @@ heroText: CSC-NOTES
 tagline: 用代码丈量世界，用文字记录成长
 actions:
   - text: 开始阅读
-    link: /notes/web/javascript/
+    link: /navigation.md
     type: primary
 footer: MIT Licensed | Copyright © 2025-至今 chenshicong
 ---
