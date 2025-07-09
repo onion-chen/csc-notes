@@ -28,6 +28,10 @@ export default {
                 {
                   text: "1.4操作符",
                   link: "/notes/web/javascript/base/grammar/操作符.md",
+                },
+                {
+                  text: "1.5语句",
+                  link: "/notes/web/javascript/base/grammar/语句.md",
                 }
               ],
             }
@@ -112,7 +116,17 @@ export default {
           ],
         }, {
           text: "C++",
-          link: "/notes/underlying/C++/README.md"
+          link: "/notes/underlying/C++/README.md",
+          children: [
+            {
+              text: "1、C++历史",
+              link: "/notes/underlying/C++/C++历史.md",
+            },
+            {
+              text: "2、数据类型",
+              link: "/notes/underlying/C++/数据类型.md",
+            }
+          ]
         },
       ],
     }

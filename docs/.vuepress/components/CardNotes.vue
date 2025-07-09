@@ -37,6 +37,7 @@ const cards = [
     title: 'C/C++',
     links: [
       { text: 'C语言', href: 'notes/underlying/C语言/' },
+      { text: 'C++', href: 'notes/underlying/C++/' },
     ],
   },
   {
